@@ -182,6 +182,12 @@ The very first thing I did was that I imported the updated model with the correc
 
 Next were the keycaps. Due to the struggle I was went through to search for the keycaps, it seemed like I had to model them most likely. For reference I imported the 1u from [Printables](https://www.printables.com/model/467351-flat-mx-keycaps).
 
+I first modeled the 1.00u keycap and then the 1.50u keycap.
+
+Here's how I did the 1.00u:
+
+* I used sketches and extrusions to model my own keycap by projections. I kept the dimensions same 
+
 Here's the lapse of today's session: [VectorSplitK-LPS-6-D6](https://lapse.hackclub.com/timelapse/r0XjsalRWVzc)
 
 **Total time spent: 3h 10m**
@@ -200,11 +206,17 @@ Here's the lapse of today's session: [VectorSplitK-LPS-7-D7](https://lapse.hackc
 
 Here's the lapse of today's session: [VectorSplitK-LPS-8-D8](https://lapse.hackclub.com/timelapse/1Yx_xMfhucab)
 
+Journaled the day #1 (partly)
+
+Day #1
+
 **Total time spent: 1h 05m**
 
 ---
 
 # Day 9 — 08.07.2026: Journaling
+
+When I was about to continue journaling day #1, I saw I lost all the changes made yesterday as I had forgotten to save my work. So, I played yesterday's sketch and using the screenshots, copied the text and retrived my writing from yesterday.
 
 Here's the lapse of today's session: [VectorSplitK-LPS-9-D9](https://lapse.hackclub.com/timelapse/5DwjW-JZZNnw)
 
@@ -214,8 +226,10 @@ Here's the lapse of today's session: [VectorSplitK-LPS-9-D9](https://lapse.hackc
 
 # Day 10 — 10.07.2026: Journaling
 
+Journaled the days #1 (full), #2, #3, #4, #5, #6 (partly) and #9.
+
 Here's the lapse of today's session: [VectorSplitK-LPS-10-D10](https://lapse.hackclub.com/timelapse/rkP9sRGi9QtF)
 
-**Total time spent: 3h 25m**
+**Total time spent: 4h 30m**
 
 ---
