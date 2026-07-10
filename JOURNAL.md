@@ -130,7 +130,17 @@ Here're the lapse of today's session: [VectorSplitK-LPS-3-D3-1](https://lapse.ha
 
 ---
 
-# Day 4 — 03.07.2026: 
+# Day 4 — 03.07.2026: Trying My Best
+
+I started working with this straight sketch which I firstly mirrored to make it symmetric. I added offset of 2 mm to it which represented the outer edges of the lower case.
+
+The PCB was placed directly above the sketch, so I had to move apart the two sides of the PCB which was really hard since the way the components were arranged required manual selection to first organize them in the browser and them move them. Trying to move the two sides of the PCB apart as bodies just doesen't work.
+
+I had to take a drastically different approach to this. 
+
+It seemed like using simpler STEP file was the way to go since the previous one had tracks, vias and all the little detials. So, I exported the file again with the minimal details. But it still was far from practical. I tried manually selecting the switches, resistors, diodes, one by one to seperate them into different components. Fusion has got to give a way for people to select multiple components from the workspace selection alone, like we do with meshes in Blender.
+
+I have an idea. Let's explore it the next day.
 
 Here's the lapse of today's session: [VectorSplitK-LPS-4-D4](https://lapse.hackclub.com/timelapse/2fYtNShAUCum)
 
@@ -138,7 +148,27 @@ Here's the lapse of today's session: [VectorSplitK-LPS-4-D4](https://lapse.hackc
 
 ---
 
-# Day 5 — 04.07.2026: 
+# Day 5 — 04.07.2026: Modelling the Lower Case
+
+For the simple version of the model, both sides are supposed to exactly symmetrical and mirrored. Here's how I executed yesterday's idea:
+
+1. Go into KiCad and delete the right side of the PCB including the mousebites.
+2. Redraw the board's left edge in Edge Cuts.
+3. Export it with minimal settings without saving.
+4. Import into Fusion and move it a little to the left.
+5. Mirror the whole component on the other side.
+
+Simultaneously, I also added fillets and offsets to the sketch and placed them to the left. Then I placed my PCB exactly over it.
+
+Then it was time for the lower casing. Here's what I did:
+
+1. Extended the existing hubs for the screws required to mount the PCB to the lower body of the casing, from the pcb itself.
+2. Added a body sized exactly in the dimentions of [WLY394058 3.7V 1000mAh 1S LiPo Battery](https://robu.in/product/wly394058-1000mah-3-7v-single-cell-rechargeable-lipo-battery/) as I chose it before.
+3. Positioned the battery in the centre of the PCB based on the rectangle formed due to the four points from the screw position.
+4. In KiCad, moved the position of the testing points to the bottom part of the PCB, and routed them.
+5. Used the Battery's position as reference to extrude a sketch that will surround the battery pack.
+
+With that, the lower case was completed.
 
 Here's the lapse of today's session: [VectorSplitK-LPS-5-D5](https://lapse.hackclub.com/timelapse/6bBPs-QqJmJs)
 
@@ -147,6 +177,10 @@ Here's the lapse of today's session: [VectorSplitK-LPS-5-D5](https://lapse.hackc
 ---
 
 # Day 6 — 05.07.2026: 
+
+The very first thing I did was that I imported the updated model with the correct position of the testing points into Fusion and place it properly and mirror it to correct position.
+
+Next were the keycaps. Due to the struggle I was went through to search for the keycaps, it seemed like I had to model them most likely. For reference I imported the 1u from [Printables](https://www.printables.com/model/467351-flat-mx-keycaps).
 
 Here's the lapse of today's session: [VectorSplitK-LPS-6-D6](https://lapse.hackclub.com/timelapse/r0XjsalRWVzc)
 
