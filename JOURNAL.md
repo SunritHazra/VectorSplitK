@@ -228,8 +228,8 @@ Here's the lapse of today's session: [VectorSplitK-LPS-9-D9](https://lapse.hackc
 
 Journaled the days #1 (full), #2, #3, #4, #5, #6 (partly) and #9.
 
-Here's the lapse of today's session: [VectorSplitK-LPS-10-D10](https://lapse.hackclub.com/timelapse/rkP9sRGi9QtF)
+Here're the lapses of today's session: [VectorSplitK-LPS-10-D10-1](https://lapse.hackclub.com/timelapse/rkP9sRGi9QtF) and [VectorSplitK-LPS-10-D10-2](https://lapse.hackclub.com/timelapse/IaWoMt11Kqi8)
 
-**Total time spent: 4h 30m**
+**Total time spent: 4h 35m**
 
 ---
