@@ -1,9 +1,9 @@
 ---
 **Title:** VectorSplitK
 **Author:** Sunrit Hazra  
-**Description:** A 42 key split keyboard powered by Seeed Studio XIAO nRF52840.  
+**Description:** A wireless high-profile 42 key mechanical split keyboard based on Seeed Studio XIAO nRF52840.  
 **Created on:** 2026-06-30  
-**Progress (%): 60%**
+**Progress (%): 90%**
 ---
 
 # Day 1 — 30.06.2026: Drawing the Schematic and Assigning Footprints
@@ -32,7 +32,7 @@ Then I started drawing the schematic with the hierierchy determined for left and
 Here's how I did the schematic:
 
 * First I made the matrix using labels, exactly as shown in the tutorial.
-* Then I placed the XIAO-nRF52840-SMD symbol by copying it from [https://github.com/Seeed-Studio/OPL Kicad Library/blob/master/XTA0%20Family/XTAO.kicad sch] (here).
+* Then I placed the XIAO-nRF52840-SMD symbol by copying it from [here](https://github.com/Seeed-Studio/OPL_Kicad_Library/blob/master/XIAO%20Family/XIAO.kicad_sch).
 * Followed by that I made the connections with the XIAO-nRF52840-SMD
 * Then it was the break offs (mousebites) which I placed in the main sheet.
 
@@ -40,15 +40,21 @@ Next were the footprints which were not just simple selections but a whole thoug
 
 Here's how each of them went by: 
 
-1. **Break-offs:** There are 3 of them. I didn't actually chose anything but **panelization:mouse-bite-2mm-slot** came by default since I copied the break-offs from mito-keyboard.
-2. **Diodes:** There is a diode for every key, so there are 42 diodes. I had chosen **Diode_SMD:D_SOD-123**.
+1. **Break-offs:** There are 3 of them. I didn't actually chose anything but **panelization:mouse-bite-2mm-slot** came by default since I copied the break-offs from mito-keyboard. But later I switched to **PCM_marbastlib-various:mousebites_5p5mm_easysnap**.
+2. **Diodes:** There is a diode for every key, so there are 42 diodes. I had chosen **Diode_SMD:D_SOD-123** since it was suggested in the split keyboard guide.
 3. **Mounting Holes:** There are 4 on each side of PCB, so 8 in total. I had selected **MountingHole:MountingHole_3.2mm_M3_DIN965_Pad** for this.
 4. **Resistors:** 2 Resistors in each side of PCB. 4 in total. I had selected **Resistor_SMD:R_0805_2012Metric**.
 5. **Switches:** 42 of them, 21 on each side of PCB. I initially chose **KEYS: SW_Hotswap Kailh MX** then switched to **Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB**.
 6. **Testing Points:** 2 on each side of PCB. 4 of them in total. I selected **TestPoint:TestPoint_Pad_D2.0mm** as the footprint.
 7. **Integrated Circuit:** 1 XIAO on each side of PCB. 2 in total. I chose **modified-XIAO-nRF52840-SMD:modified-XIAO-nRF52840-SMD** as told in the guide.
 
-I ran the ERC. Then it was time for the PCB. 
+I ran the ERC. Then it was time for the PCB. I didn't know how to design the edges of the board, place the switches in a grid or what to do. So it seemed like I need some inspiration. So, I opened some repositories of people I know who have built a hackpad, to see how to do what I didn't know. I opened these repositories:
+
+1. [mito-keyboard](https://github.com/mito-keyboard/mito-simplified/tree/main)
+2. [TaoTeChing](https://github.com/sudo-apt-install-tap/TaoTeChing)
+3. [OVERRIDE-X3D-Split-Keeb](https://github.com/DevX-Dragon/OVERRIDE-X3D-Split-Keeb)
+
+I copied the edge cuts from different sources and found a way of awwanging the switches. My idea was to lay the swtiches in a grid (exactly as in the schematic) and then I move the second and second last rows **"X"** mm up and the middle row **"2X"** mm up. Here **"X"** can be 5 mm or 10 mm depending on the spacing.
 
 Here're the lapse of today's session: [VectorSplitK-LPS-1-D1-1](https://lapse.hackclub.com/timelapse/eYyMFjQSes5m) and [VectorSplitK-LPS-1-D1-2](https://lapse.hackclub.com/timelapse/YLruufpElHKS)
 
@@ -56,7 +62,28 @@ Here're the lapse of today's session: [VectorSplitK-LPS-1-D1-1](https://lapse.ha
 
 ---
 
-# Day 2 — 01.07.2026: Placing Components and Routing
+# Day 2 — 01.07.2026: Placing Components
+
+It was not time for me to execute the idea that I got the day before. I executed it succesfully in two attempts:
+
+* First, I laid out the grid using the positioning tools initially with 15 mm distance between the switches. Then moved the second and fourth row 5 mm up and the third row 10 mm up. I then drew the edges as well.
+
+* But in the first attempt the switches were too close together. Then after correcting the spacing to 20 mm distance between the switches, moved the second and fourth row 10 mm up and the third row 20 mm up. I then drew the edges again at 5 mm distance from the keys.
+
+With the switches placed and the edges drawn, I moved the left side of the PCB to the right and the right to the left.
+
+I was then left with the mousebites, resistors, diodes and the integrated circuits. Here's where and what I placed next:
+
+1. Mousebites between the flat sides of the PCB.
+2. XIAO-nRF52840-SMD above the 41st and 42nd key.
+3. Each diode above thier respective switches (for SW_41 and SW_42 it was below them)
+4. Resistors beside the 41st and 42nd key.
+
+Then I started routing the PCB, but I thought how hard it would be to gather the footprint I was using in real life. Then I did some research using Gemeini and it turned out that I had to change the footprint of my switches as the one I chose were low profile. I wanted high profile mechanical switches.
+
+With that, I changed the footprint for the switches from **Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB** to **acheron_MXH.pretty-master:MX100H** for hotswap high profile keys. And I updated the PCB and added models for all the switches and the XIAO-nRF52840-SMD
+
+But then I noticed a connection between the grounds of the two different parts of the PCB. I was confused as I didn't expect this from hierarcheal sheets. I kept it as a problem for the next day.
 
 Here's the lapse of today's session: [VectorSplitK-LPS-2-D2](https://lapse.hackclub.com/timelapse/7gLMdGcFhW8j)
 
@@ -64,7 +91,38 @@ Here's the lapse of today's session: [VectorSplitK-LPS-2-D2](https://lapse.hackc
 
 ---
 
-# Day 3 — 02.07.2026: idk go see urself
+# Day 3 — 02.07.2026: PCB Routing
+
+Today's day was about routing the PCB, but before that I had to solve yesterday;s problem first.
+
+I realised that there are power flags for GND and since the names are same, the only way to change them was to make them sheet specific, which seemed impossible as hierarcheal streets are just duplicates. So whatever change I make also applies to the other one as well. Thanks to Gemini that suggested to use **"${SHEETNAME}_GND"** for the GND power flag. This meant that there will be one **Right_GND** and **Left_GND**. Problem solved!
+
+With the problem solved, I routed all the components of the PCB and and editd the edge cuts so it matches the mousebites footprint template.
+
+Next I edited the Front and Back Silkscreen like this:
+
+1. I converted both the Front Fab (after flipping) and Back Fab to Back Silkcreen.
+2. Manually named the testing points.
+3. Positioned the text centered to the switches.
+4. I converted User.Drawings to Front Silkscreen.
+5. I converted User.Eco1 to Back Silkscreen.
+
+Then I ran DRC and fixed the last remaining errors and then also exported the gerbers for a little test. I uploaded it on JLCMC and saw if things were okay.
+
+I had also exported the STEP files. So, I imported them into Fusion for making the case. But looking at the model, it seemed like it would be best if I used 1.50u keys for the 41st and 42nd key. So, I made some adjustments to the position of the two key and rotated them 180 degrees.
+
+I needed 3d model to see how it would look but things didn't go as expected. I saw many people have posted whole collections and sets of keycaps ranging from 1.00u all they way to 7.00u. But there was the same problem with every single one of them: They are not symmetrical and fat, but angled. After a lot of searching and several attempts, I decided to add keycaps later becuase I had a lot other thing to focus on at the moment. Like the case and the battery.
+
+For the battery, I searched in google, took guidance from AI and chose [WLY394058 3.7V 1000mAh 1S LiPo Battery](https://robu.in/product/wly394058-1000mah-3-7v-single-cell-rechargeable-lipo-battery/) from Robu.in for each side of my keyboard. I chose it becuase it is just 3.9 mm thick, so I can easily place it under the PCBA without making the lower case much thick.
+
+For the case, I had to make a sketch. Here's what I did:
+
+1. Imported the PCB into the Fusion workspace.
+2. Deleted the shapes except the outermost layer (edge cuts)
+3. Deleted the extra faces in the rounded corners.
+4. Redrew the sketch with no rounded corners.
+
+I decided to work on this for the next day where I will use offsets and fillets to form the lower case.
 
 Here're the lapse of today's session: [VectorSplitK-LPS-3-D3-1](https://lapse.hackclub.com/timelapse/wJ1pVrpDzbS-), [VectorSplitK-LPS-3-D3-2](https://lapse.hackclub.com/timelapse/x-hgnSQhrMK1) and [VectorSplitK-LPS-3-D3-3](https://lapse.hackclub.com/timelapse/ZtfF6PPONsYK)
 
@@ -122,8 +180,8 @@ Here's the lapse of today's session: [VectorSplitK-LPS-9-D9](https://lapse.hackc
 
 # Day 10 — 10.07.2026: Journaling
 
-Here's the lapse of today's session: []()
+Here's the lapse of today's session: [VectorSplitK-LPS-10-D10](https://lapse.hackclub.com/timelapse/rkP9sRGi9QtF)
 
-**Total time spent: 0h 00m**
+**Total time spent: 3h 25m**
 
 ---
