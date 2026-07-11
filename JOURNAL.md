@@ -176,17 +176,59 @@ Here's the lapse of today's session: [VectorSplitK-LPS-5-D5](https://lapse.hackc
 
 ---
 
-# Day 6 — 05.07.2026: 
+# Day 6 — 05.07.2026: Modeling the Keycaps
 
-The very first thing I did was that I imported the updated model with the correct position of the testing points into Fusion and place it properly and mirror it to correct position.
+The very first thing I did was this: I imported the updated STEP file with the correct position of the testing points into Fusion and placed it properly and mirrored it to correct position.
 
-Next were the keycaps. Due to the struggle I was went through to search for the keycaps, it seemed like I had to model them most likely. For reference I imported the 1u from [Printables](https://www.printables.com/model/467351-flat-mx-keycaps).
+Next were the keycaps. Due to the struggle I was went through to search for the keycaps, it seemed like the best way was to model the keycaps. This meant that I had to 3D print my keys, most likely. Well, that is not a problem since I have a 3D printer thanks to Construct. I thus fimalised the idea of self-modelling the keys.
+
+I needed some source for the model, so I started searching in Printables. For reference I imported the 1u model from [Printables](https://www.printables.com/model/467351-flat-mx-keycaps).
 
 I first modeled the 1.00u keycap and then the 1.50u keycap.
 
-Here's how I did the 1.00u:
+Here's how I did the 1.00u keycap:
 
-* I used sketches and extrusions to model my own keycap by projections. I kept the dimensions same 
+* I projected the upper and lower face of the imported keycap.
+* Used extrusions to form a flat shape representing the lower face.
+* Used loft to join the lower and upper face, forming the shape.
+* Used extrusion to cut out the inner part of keycap body.
+* Used projected sketch to extrude out the stem and +-like hub.
+
+The 1.00u keycap:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/c063af4f-78ea-456d-a1e7-c4b87b28e8bc" />
+
+Here's how I did the 1.50u keycap:
+
+* I deleted the keycap stem and +-like hub.
+* Split the 1.00u keycap in half.
+* Moved both the parts apart by 4.5 mm apart, making the distance 9 mm between them.
+* Used extrude to bridge the gap.
+* Used the old sketch to form the +-like hub.
+
+The 1.50u keycap:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/b5eb427d-dd2c-4336-9424-ced0e5985541" />
+
+But I was not totally confident with the internal dimensions of the +-like section. So, I did this:
+
+1. Deleted the like part.
+2. Copied the moving part of the switch.
+3. Used joint to position it over the stem section.
+4. Used combine cut to carve out the geometry.
+5. Rotated it and repated the action.
+
+I also made sure that the same geometry exists at the stem section of both the 1.00u and 1.50u keycaps.
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/1d415397-c43c-4553-b555-7b1499a1ef53" />
+
+With the 1.00u and 1.50u keycaps modeled, it was finally the time to integrate them into the PCBA. Thus, I went into kiCad and then I updated both the **MX100H** and **MX150H** footprints by adding the models.
+
+Then I went into KiCad, deleted one side of the PCB and then exported the STEP file (again) with the simplest possible settings, imported it into fusion, positioned the PCB, mirrored the PCB and finally arranged the components in the browser.
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/db8059a2-9102-4b3e-8784-6feb1774e44e" />
+
+I then made some clearence adjustments in the model and made sure nothing overlaps and fits gracefully.
 
 Here's the lapse of today's session: [VectorSplitK-LPS-6-D6](https://lapse.hackclub.com/timelapse/r0XjsalRWVzc)
 
@@ -194,7 +236,7 @@ Here's the lapse of today's session: [VectorSplitK-LPS-6-D6](https://lapse.hackc
 
 ---
 
-# Day 7 — 06.07.2026: 
+# Day 7 — 06.07.2026: Modelling the Upper Case
 
 Here's the lapse of today's session: [VectorSplitK-LPS-7-D7](https://lapse.hackclub.com/timelapse/vuXKPHH6yCxN)
 
