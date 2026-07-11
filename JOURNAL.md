@@ -322,3 +322,11 @@ Here're the lapses of today's session: [VectorSplitK-LPS-10-D10-1](https://lapse
 **Total time spent: 4h 35m**
 
 ---
+
+# Day 11 — 11.07.2026: Journaling & Modelling
+
+Here's the lapse of today's session: [VectorSplitK-LPS-11-D11](https://lapse.hackclub.com/timelapse/CPPEX1s_R7dv)
+
+**Total time spent: 5h 10m**
+
+---
