@@ -6,7 +6,7 @@
 **Progress (%): 90%**
 ---
 
-# Day 1 — 30.06.2026: Drawing the Schematic and Assigning Footprints
+# Day 1 — 30.06.2026: Drawing the Schematic & Assigning Footprints
 
 For the split keyboard I have followed the Started Project Guide from Hack Club Stasis. For the first few minutes, before I started drawing the schmatic, I was asking AI what could I name
 my project. And I chose "VectorSplitk" as the name of my project, which follows the same naming format as my previous starter electronics projects like hackpad and devboard.
@@ -228,7 +228,21 @@ Then I went into KiCad, deleted one side of the PCB and then exported the STEP f
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/db8059a2-9102-4b3e-8784-6feb1774e44e" />
 
-I then made some clearence adjustments in the model and made sure nothing overlaps and fits gracefully.
+I then made some clearence adjustments in the model and made sure nothing overlaps, and everything fits gracefully.
+
+Then I noticed there was no hole for the USB-C cable to get in. So, I made an extrusion to cut through the lower case wall:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/4d4704b3-1298-42bb-8e61-fbe1d199c7f5" />
+
+After that I deleted the inner part and then used offset to make the hole a little bigger:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/8bf3363d-8858-42fd-8ff0-da7921443aad" />
+
+Next thing which I had to model was the upper case, which I will do tommorow.
+
+Here's how the Split keyboard looks:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/5eff51ac-2099-4242-aff3-b4fc18a26942" />
 
 Here's the lapse of today's session: [VectorSplitK-LPS-6-D6](https://lapse.hackclub.com/timelapse/r0XjsalRWVzc)
 
@@ -237,6 +251,39 @@ Here's the lapse of today's session: [VectorSplitK-LPS-6-D6](https://lapse.hackc
 ---
 
 # Day 7 — 06.07.2026: Modelling the Upper Case
+
+For modelling the upper case, I had a design in mind where the switches will be firmly attached to the upper case and the PCB, so that they act as one single part of the same system. I wanted the screw hoes to extend to the upper face of the upper case.
+
+I needed to figure out a way using which I could know the exact shape needed for properly attaching the switches to the upper case. For this, I visited my hackpad's model to study the dimensions of the uppercase.
+
+I found out that the square was 14.70 mm by 14.70 mm, with rounded corners having length of 0.705 mm. Good thing that I came to know the dimensions but it proved futile.
+
+Here's what I did next:
+
+1. Made a sketch and projected every switch body on the sketch.
+   <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/35ad7ad6-6285-4fd1-8a96-6f028b36646b" />
+2. Extruded the sketch and moved it up, as the sketch was on the floor.
+   <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/731b3b73-5c4f-43b0-b90d-62bea4fc97ed" />
+3. Mirrored the body, arranged both of the bodies in the Browser and added appearence.
+   <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/dc109f5f-f171-44db-9b85-7cc302fec086" />
+4. Made a new sketch and made 1 mm offset for switches and 1.5 mm offset for the walls.
+   <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/0e49fec5-ec81-476c-8a48-a95972b9e611" />
+5. Extruded the switch offsets by 1 mm and the wall offsets by 4.05 mm, to make it thicker.
+   <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/06252676-01e1-40ca-990d-384f1b534b5f" />
+6. Extended the screw hole pads to the uppercase, and then extruded in till the PCB.
+   <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/57c3c739-da9a-4853-a536-de2c18fa46f1" />
+7. Made the outer wall thinner by using facial offsets on the curved faces by -0.8 mm.
+   <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/6504d556-e3e6-4401-901a-5bb9a53c7d5e" />
+8. Combined the parts of the screw hubs and mirrored the combined body.
+   <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/18a5f651-48cd-4790-b75a-b9a7b193f031" />
+
+With this, the upper case was completed, leaving almost nothing to model.
+
+Here's how the Split Keyboard looks:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/66cbb42b-4fb9-4d8a-a126-4891d20101de" />
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/7fa85380-3b1d-42a2-866a-e7a369bbc0db" />
 
 Here's the lapse of today's session: [VectorSplitK-LPS-7-D7](https://lapse.hackclub.com/timelapse/vuXKPHH6yCxN)
 
