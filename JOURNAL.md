@@ -331,3 +331,10 @@ Here's the lapse of today's session: [VectorSplitK-LPS-11-D11](https://lapse.hac
 
 ---
 
+# Day 12 — 11.07.2026: Accounting
+
+Here's the lapse of today's session: [VectorSplitK-LPS-12-D12](https://lapse.hackclub.com/timelapse/eZuC9CHMVYUR)
+
+**Total time spent: 3h 45m**
+
+---
