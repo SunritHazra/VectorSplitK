@@ -327,7 +327,7 @@ Here're the lapses of today's session: [VectorSplitK-LPS-10-D10-1](https://lapse
 
 Here's the lapse of today's session: [VectorSplitK-LPS-11-D11](https://lapse.hackclub.com/timelapse/CPPEX1s_R7dv)
 
-**Total time spent: 5h 10m**
+**Total time spent: 5h 15m**
 
 ---
 
@@ -335,6 +335,6 @@ Here's the lapse of today's session: [VectorSplitK-LPS-11-D11](https://lapse.hac
 
 Here's the lapse of today's session: [VectorSplitK-LPS-12-D12](https://lapse.hackclub.com/timelapse/eZuC9CHMVYUR)
 
-**Total time spent: 3h 45m**
+**Total time spent: 3h 50m**
 
 ---
