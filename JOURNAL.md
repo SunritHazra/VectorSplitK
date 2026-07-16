@@ -36,6 +36,18 @@ Here's how I did the schematic:
 * Followed by that I made the connections with the XIAO-nRF52840-SMD
 * Then it was the break offs (mousebites) which I placed in the main sheet.
 
+Here's how the main Schematic looks:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/41074558-e1d6-47a8-8179-e87d7e236dc5" />
+
+Here's how the left schematic looks:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/ea8a6e65-f7e4-4908-bcbc-8609f5bb8108" />
+
+Here's how the right schematic looks:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/8aa38ea9-39c9-45ee-b7cd-703116fdfb38" />
+
 Next were the footprints which were not just simple selections but a whole thought process and understanding. I initially was just trying to copy the footprints without understanding. Turned out that most of the footprints I chose, were replaced by other footprints, and even modified, when I finally understood what I was doing.
 
 Here's how each of them went by: 
@@ -47,6 +59,10 @@ Here's how each of them went by:
 5. **Switches:** 42 of them, 21 on each side of PCB. I initially chose **KEYS: SW_Hotswap Kailh MX** then switched to **Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB**.
 6. **Testing Points:** 2 on each side of PCB. 4 of them in total. I selected **TestPoint:TestPoint_Pad_D2.0mm** as the footprint.
 7. **Integrated Circuit:** 1 XIAO on each side of PCB. 2 in total. I chose **modified-XIAO-nRF52840-SMD:modified-XIAO-nRF52840-SMD** as told in the guide.
+
+Here's the glimpse of the Footpsint Assigning Table:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/8a61f3d2-fec3-4f36-808e-dd65e889bda1" />
 
 I ran the ERC. Then it was time for the PCB. I didn't know how to design the edges of the board, place the switches in a grid or what to do. So it seemed like I need some inspiration. So, I opened some repositories of people I know who have built a hackpad, to see how to do what I didn't know. I opened these repositories:
 
@@ -70,6 +86,10 @@ It was not time for me to execute the idea that I got the day before. I executed
 
 * But in the first attempt the switches were too close together. Then after correcting the spacing to 20 mm distance between the switches, moved the second and fourth row 10 mm up and the third row 20 mm up. I then drew the edges again at 5 mm distance from the keys.
 
+This is how the pattern looks like:
+
+<img width="1069" height="564" alt="image" src="https://github.com/user-attachments/assets/5cef9142-aef2-4d24-beaa-60553c8dbd60" />
+
 With the switches placed and the edges drawn, I moved the left side of the PCB to the right and the right to the left.
 
 I was then left with the mousebites, resistors, diodes and the integrated circuits. Here's where and what I placed next:
@@ -79,11 +99,15 @@ I was then left with the mousebites, resistors, diodes and the integrated circui
 3. Each diode above thier respective switches (for SW_41 and SW_42 it was below them)
 4. Resistors beside the 41st and 42nd key.
 
-Then I started routing the PCB, but I thought how hard it would be to gather the footprint I was using in real life. Then I did some research using Gemeini and it turned out that I had to change the footprint of my switches as the one I chose were low profile. I wanted high profile mechanical switches.
+Then I started routing the PCB, but I thought of doing some research using Gemini on the keys I was using and it turned out that I had to change the footprint of my switches as the one I chose were low profile. I wanted high profile mechanical switches.
 
 With that, I changed the footprint for the switches from **Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB** to **acheron_MXH.pretty-master:MX100H** for hotswap high profile keys. And I updated the PCB and added models for all the switches and the XIAO-nRF52840-SMD
 
 But then I noticed a connection between the grounds of the two different parts of the PCB. I was confused as I didn't expect this from hierarcheal sheets. I kept it as a problem for the next day.
+
+But, anyways, here's how the PCB looks with the components placed nd edges defined:
+
+<img width="1072" height="565" alt="image" src="https://github.com/user-attachments/assets/e0490416-5e3d-4748-a686-6793f372d27d" />
 
 Here's the lapse of today's session: [VectorSplitK-LPS-2-D2](https://lapse.hackclub.com/timelapse/7gLMdGcFhW8j)
 
@@ -124,6 +148,10 @@ For the case, I had to make a sketch. Here's what I did:
 
 I decided to work on this for the next day where I will use offsets and fillets to form the lower case.
 
+But here's the full routed PCB:
+
+<img width="1067" height="567" alt="image" src="https://github.com/user-attachments/assets/21ae7e6a-41a7-459e-be00-d6eb4a80c987" />
+
 Here're the lapse of today's session: [VectorSplitK-LPS-3-D3-1](https://lapse.hackclub.com/timelapse/wJ1pVrpDzbS-), [VectorSplitK-LPS-3-D3-2](https://lapse.hackclub.com/timelapse/x-hgnSQhrMK1) and [VectorSplitK-LPS-3-D3-3](https://lapse.hackclub.com/timelapse/ZtfF6PPONsYK)
 
 **Total time spent: 6h 40m**
@@ -137,6 +165,10 @@ I started working with this straight sketch which I firstly mirrored to make it 
 The PCB was placed directly above the sketch, so I had to move apart the two sides of the PCB which was really hard since the way the components were arranged required manual selection to first organize them in the browser and them move them. Trying to move the two sides of the PCB apart as bodies just doesen't work.
 
 I had to take a drastically different approach to this. 
+
+Take this imge for example. Every single diode, switch and resistor is a differnet component. This means that either I have to mannually select or take a drastically different approach to this.
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7a340392-f9d8-4634-b1e6-d0ec855a9429" />
 
 It seemed like using simpler STEP file was the way to go since the previous one had tracks, vias and all the little detials. So, I exported the file again with the minimal details. But it still was far from practical. I tried manually selecting the switches, resistors, diodes, one by one to seperate them into different components. Fusion has got to give a way for people to select multiple components from the workspace selection alone, like we do with meshes in Blender.
 
@@ -152,11 +184,11 @@ Here's the lapse of today's session: [VectorSplitK-LPS-4-D4](https://lapse.hackc
 
 For the simple version of the model, both sides are supposed to exactly symmetrical and mirrored. Here's how I executed yesterday's idea:
 
-1. Go into KiCad and delete the right side of the PCB including the mousebites.
-2. Redraw the board's left edge in Edge Cuts.
-3. Export it with minimal settings without saving.
-4. Import into Fusion and move it a little to the left.
-5. Mirror the whole component on the other side.
+1. Went into KiCad and deleted the right side of the PCB including the mousebites.
+2. Redrew the board's left edge in Edge Cuts.
+3. Exported it with minimal settings without saving.
+4. Imported into Fusion and moved it a little to the left.
+5. Mirrored the whole component on the other side.
 
 Simultaneously, I also added fillets and offsets to the sketch and placed them to the left. Then I placed my PCB exactly over it.
 
@@ -168,7 +200,9 @@ Then it was time for the lower casing. Here's what I did:
 4. In KiCad, moved the position of the testing points to the bottom part of the PCB, and routed them.
 5. Used the Battery's position as reference to extrude a sketch that will surround the battery pack.
 
-With that, the lower case was completed.
+With that, the lower case was completed, and it looks like this:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/249c9f63-322f-4050-8047-b0a26c1e658d" />
 
 Here's the lapse of today's session: [VectorSplitK-LPS-5-D5](https://lapse.hackclub.com/timelapse/6bBPs-QqJmJs)
 
