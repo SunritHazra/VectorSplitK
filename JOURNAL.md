@@ -293,11 +293,13 @@ Here's the lapse of today's session: [VectorSplitK-LPS-7-D7](https://lapse.hackc
 
 # Day 8 — 07.07.2026: Journaling
 
-Here's the lapse of today's session: [VectorSplitK-LPS-8-D8](https://lapse.hackclub.com/timelapse/1Yx_xMfhucab)
-
 Journaled the day #1 (partly)
 
 Day #1
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9c148fe5-4e82-41d5-a49e-d1a01fc9735f" />
+
+Here's the lapse of today's session: [VectorSplitK-LPS-8-D8](https://lapse.hackclub.com/timelapse/1Yx_xMfhucab)
 
 **Total time spent: 1h 05m**
 
@@ -306,6 +308,8 @@ Day #1
 # Day 9 — 08.07.2026: Journaling
 
 When I was about to continue journaling day #1, I saw I lost all the changes made yesterday as I had forgotten to save my work. So, I played yesterday's sketch and using the screenshots, copied the text and retrived my writing from yesterday.
+
+<img width="1271" height="713" alt="image" src="https://github.com/user-attachments/assets/2aeb20a0-7d00-441e-864b-0604fa802c56" />
 
 Here's the lapse of today's session: [VectorSplitK-LPS-9-D9](https://lapse.hackclub.com/timelapse/5DwjW-JZZNnw)
 
@@ -316,6 +320,8 @@ Here's the lapse of today's session: [VectorSplitK-LPS-9-D9](https://lapse.hackc
 # Day 10 — 10.07.2026: Journaling
 
 Journaled the days #1 (full), #2, #3, #4, #5, #6 (partly) and #9.
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0c8b5a8a-5b19-4e2e-b3ce-754df5d546b2" />
 
 Here're the lapses of today's session: [VectorSplitK-LPS-10-D10-1](https://lapse.hackclub.com/timelapse/rkP9sRGi9QtF) and [VectorSplitK-LPS-10-D10-2](https://lapse.hackclub.com/timelapse/IaWoMt11Kqi8)
 
@@ -349,7 +355,7 @@ After having the position of the mounting holes fixed, I also centered the batte
 
 Here's how the keyboard looks at last:
 
-
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/d035b426-b603-4154-b5b9-608c26c7af1f" />
 
 Here's the lapse of today's session: [VectorSplitK-LPS-11-D11](https://lapse.hackclub.com/timelapse/CPPEX1s_R7dv)
 
