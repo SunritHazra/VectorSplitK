@@ -325,16 +325,66 @@ Here're the lapses of today's session: [VectorSplitK-LPS-10-D10-1](https://lapse
 
 # Day 11 — 11.07.2026: Journaling & Modelling
 
+For the first one hour and thirty minutes, I spent time on journaling days #7 and #8 and adding more details to days #1, #4, #5, #6 and #7.
+
+I had actually not completed journaling but I was bored out of my mind, so it felt like it is better to spend time on something else like modelling. So, I needed something to work on. To be specific, a problem to work on.
+
+So, I started to investigate the problems with the system, so that I can work on them and I found these three in my investigation:
+
+1. **SoC Type C Hole:** The current position of the Seeed Studio XIAO nRF52840 was such that it would be very tight for the Type C cable, as it might rub against the lower case. Or even worse, it could not even fit. Thus I had to shift the position of the SoC a little so that it is both symmetrical and also ensures proper fit for the cable. 
+
+2. **PCB Mounting Holes:** The positions of the mounting holes was not very good resulting in the problem of adding knurled inserts. Thus I have to position them exactly in the centre of the nearby switches.
+
+3. **Upper Case Mounting Holes:** The position of the holes on the Upper Case depended on the sketch of projection of the PCB itself. This meant that I had to update the PCB.
+
+I then opened KiCad and one by one solved each problem like this:
+
+* For the first one I first made sure what the position of the Seeed Studio XIAO nRF52840 was on the board relative to its closest corner on the Edge. Then updated that position and copied it to the other side as well with mirrored position. Then imported the PCB after routing.
+
+* For the mounting holes, I also made a similar approach and positioned them at a certain location where the centre of the hole is quidistant from the 3 switches surrounding it. Then imported the PCB after routing.
+
+* For the uppercase, I used the updated PCB to project sketch and use it, after routing the PCB and exporting it. The imported PCB had the correct positions that gave more room for the knurled inserts.
+
+After having the position of the mounting holes fixed, I also centered the battery space by making an offset of 0.13 mm.
+
+Here's how the keyboard looks at last:
+
+
+
 Here's the lapse of today's session: [VectorSplitK-LPS-11-D11](https://lapse.hackclub.com/timelapse/CPPEX1s_R7dv)
 
 **Total time spent: 5h 15m**
 
 ---
 
-# Day 12 — 11.07.2026: Accounting
+# Day 12 — 13.07.2026: Making the BOM
+
+I started with a minor change I forgot to make the day before, which was adding offsets for the Upper Case so it actually fits with the Lower Case. Previously, there was zero offset, but today I added 0.2 mm offset.
+
+Then I exported my PCB into VectorSplitK_Gerber.zip with all the nescessary files.
+
+With the PCB exported, I simultaneously opened Excel and copied my BOM format from one of my other project and started adding placeholders. I opened JLCPCB and uploaded the ZIP and wasn't quite happy with the numbers. Actually, I don't mind paying $16.40 for the PCB but the shipping is literally $16.73 with E-POST and there are additional customs that Forge ain't gonna pay.
+
+Next I obviously went for the keys, which took a lot of time. I had planned to print my Keycaps, so that was nonw of my concerns. Initially I thought of searching in Amazon or Flipkart, but the deals were pathetic. So, I settled on Cosmic Bite for the keys and later changed to Meckeys, as for the Kalih socket, I was buying from Meckeys.
+
+Next, one by one I went through the Footprint table and chose component for the diodes, resistors, SoC and battery. I chose all of these from Robu.in.
+
+For the screws and the knurled inserts, I had chosen them from OnlyScrews.
+
+Finally, this is the complete BOM:
+	
+<img width="1776" height="460" alt="image" src="https://github.com/user-attachments/assets/3aff129f-a53d-4340-9f2d-5316817ebed3" />
 
 Here's the lapse of today's session: [VectorSplitK-LPS-12-D12](https://lapse.hackclub.com/timelapse/eZuC9CHMVYUR)
 
 **Total time spent: 3h 50m**
+
+---
+
+# Day 13 — 16.07.2026: Journaling
+
+Here's the lapse of today's session: [VectorSplitK-LPS-13-D13]()
+
+**Total time spent: 0h 00m**
 
 ---
