@@ -3,7 +3,8 @@
 **Author:** Sunrit Hazra  
 **Description:** A wireless high-profile 42 key mechanical split keyboard based on Seeed Studio XIAO nRF52840.  
 **Created on:** 2026-06-30  
-**Progress (%): 90%**
+**Designing Progress (%): 100%**
+**Building Progress (%): 0%**
 ---
 
 # Day 1 — 30.06.2026: Drawing the Schematic & Assigning Footprints
