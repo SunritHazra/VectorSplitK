@@ -438,7 +438,7 @@ Here's what I did to the PCB:
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/b3e1e8ef-e9e1-44f7-a322-619f9ca8c23f" />
 
-Here's the lapse of today's session: [VectorSplitK-LPS-13-D13]()
+Here's the lapse of today's session: [VectorSplitK-LPS-13-D13](https://lapse.hackclub.com/timelapse/TeylD5ZsRaPr)
 
 **Total time spent: 2h 00m**
 
