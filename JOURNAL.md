@@ -421,10 +421,24 @@ Here's the lapse of today's session: [VectorSplitK-LPS-12-D12](https://lapse.hac
 
 ---
 
-# Day 13 — 16.07.2026: Journaling
+# Day 13 — 16.07.2026: Journaling & Adding Slikscreen Text
+
+I mostly spent time journaling days #8, #9, #10, #11, #12 and #13 and added pictures to days #1, #2, #3, #4, #5, #7, and the new ones.
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a0e7bfc8-192e-4d89-b2de-51805e5d2e85" />
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e1f521f3-f59a-4a09-a7b9-771da3f76d7f" />
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f8144d9f-15b9-4e73-be9c-f6ae7dad5bed" />
+
+I also added text for my name, name of the projet and month and year on which I made it, in the PCB F.Slikscreen like my previous PCBs. Then I re-exported the Fabrication outputs.
+
+Here's what I did to the PCB:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/b3e1e8ef-e9e1-44f7-a322-619f9ca8c23f" />
 
 Here's the lapse of today's session: [VectorSplitK-LPS-13-D13]()
 
-**Total time spent: 0h 00m**
+**Total time spent: 2h 00m**
 
 ---
