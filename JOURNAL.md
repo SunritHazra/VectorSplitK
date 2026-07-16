@@ -443,3 +443,11 @@ Here's the lapse of today's session: [VectorSplitK-LPS-13-D13](https://lapse.hac
 **Total time spent: 2h 00m**
 
 ---
+
+# Day 14 — 17.07.2026: Completing the Repository
+
+Here's the lapse of today's session: [VectorSplitK-LPS-14-D14]()
+
+**Total time spent: 0h 00m**
+
+---
