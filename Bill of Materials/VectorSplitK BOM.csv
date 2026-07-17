@@ -1,0 +1,21 @@
+VectorSplitK BOM,,,,
+Component Category,Item,Cost,Side Note,Link
+PCBA,PCB [5], $16.40 , No assembly ,
+,Cherry Max Key Set [4 (10 each)], $14.10 ,,https://meckeys.com/shop/accessories/keyboard-accessories/key-switches/cherry-mx-rgb-switch/
+,Hotswap Socket [4 (10 each)], $3.18 ,,https://meckeys.com/shop/accessories/keyboard-accessories/key-switches/kailh-hot-swap-socket/
+,WLY394058 3.7V 1000mAh 1S LiPo Battery [2], $7.88 ,,https://robu.in/product/wly394058-1000mah-3-7v-single-cell-rechargeable-lipo-battery/
+,Seeed Studio XIAO BLE nRF52840 [2], $23.60 , SoC ,https://robu.in/product/seeed-studio-xiao-ble-nrf52840/
+,1N5819-KEXIN-40V 500mV@1A 1A DO-214AC(SMA) Schottky Diode [42], $0.66 , Diode ,https://robu.in/product/1n5819-kexin-40v-500mv1a-1a-do-214acsma-schottky-diodes-rohs/
+,"RC0805FR-0780K6L-Yageo-SMD Resistor, 80.6 k? [67]", $0.10 , Resistor ,https://robu.in/product/rc0805fr-0780k6l-yageo-smd-chip-resistor-80-6-kohm-%c2%b1-1-125-mw-0805-2012-metric-thick-film-general-purpose/
+,AC0805FR-072ML-YAGEO-Res Resistor 2M? [14], $0.11 , Resistor ,https://robu.in/product/ac0805fr-072ml-yageo-res-thick-film-0805-2m-ohm-1-0-125w1-8w-%c2%b1100ppm-c-pad-smd-t-r-automotive-aec-q200/
+,Total, $66.03 ,,
+Case,Case Upper [2], $-   , Printed ,
+,Case Lower [2], $-   , Printed ,
+,M3 X 12mm Phillips Pan head SS 304 Screw [10], $0.21 ,,https://onlyscrews.in/products/phillips-pan-head-m3-x-12mm-pack-of-20?currency=INR&country=IN&variant=48468581351737&stkn=6e84ebfba1b8&utm_source=google&utm_medium=cpc&utm_campaign=inderans_campaign_copy&gad_source=1&gad_campaignid=22930701107&gbraid=0AAAAA9sP2SRmqUzHVZy9e6A0UTPQuih7U&gclid=CjwKCAjwmdLSBhANEiwAkREMN3OHQPSDehmpNt3A486QzV3VIZED1ppNLQosBPpVNRnTR3FEHJ__jhoCJA0QAvD_BwE
+,M3 X 6mm 3D Printing Brass Threaded Slant Knurled Inserts [10], $0.50 ,,https://onlyscrews.in/products/m3-x-6mm-3d-printing-brass-threaded-inserts-dia-3mm-length-6mm?currency=INR&country=IN&variant=51684594909497&stkn=6e84ebfba1b8&utm_source=google&utm_medium=cpc&utm_campaign=inderans_campaign_copy&gad_source=1&gad_campaignid=22930701107&gbraid=0AAAAA9sP2SRmqUzHVZy9e6A0UTPQuih7U&gclid=CjwKCAjwmdLSBhANEiwAkREMN1EGwPlb6fHb9D60NF8BGnE4FfCl70u7F7NMlNUnfCkxsM2QirfLtBoCe7sQAvD_BwE
+,Total, $0.71 ,,
+Taxes & Shipping,Meckeys Shipping, $1.05 , Standard Shipping ,
+,OnlyScrews Shipping, $0.72 , Standard Shipping ,
+,E-POST Shipping, $16.73 , Cheapest Option ,
+,Total, $18.50 ,,
+Grand Total,, $85.24 ,,
