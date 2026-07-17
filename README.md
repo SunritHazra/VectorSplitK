@@ -38,13 +38,9 @@ Main Sheet
 
 Left Half Matrix
 
-<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/ea8a6e65-f7e4-4908-bcbc-8609f5bb8108" />
-
 <img width="3507" height="2480" alt="image" src="https://github.com/user-attachments/assets/45d52524-a4d0-4850-b50c-471edfcd50e0" />
 
 Right Half Matrix
-
-<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/8aa38ea9-39c9-45ee-b7cd-703116fdfb38" />
 
 <img width="3507" height="2480" alt="image" src="https://github.com/user-attachments/assets/5b41e187-51f8-4ab5-8482-c0280d64f9a9" />
 
