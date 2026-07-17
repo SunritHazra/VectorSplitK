@@ -176,3 +176,27 @@ Full sourcing sheet with vendors and pricing: [`/Bill of Materials`](<./Bill of 
 | Screws & Knurled Inserts | OnlyScrews |
 
 ---
+
+## Firmware
+
+---
+
+## AI as a Design Collaborator
+
+While the hardware engineering, PCB routing, firmware architecture, and 3D CAD modeling were completed manually, AI (Gemini, ChatGPT, and Claude) was used as a technical assistant throughout the project—not to generate designs, but to help research, troubleshoot, validate decisions, and improve documentation.
+
+- **Brainstorming:** Helped refine the project name (**VectorSplitK**).
+- **Research & Validation:** Verified switch footprints, component choices, and battery selection.
+- **Debugging:** Assisted in resolving KiCad schematic and hierarchical-sheet issues.
+- **Design Review:** Discussed engineering trade-offs, BOM costs, and manufacturing decisions.
+- **Firmware & Documentation:** Helped architect the initial ZMK firmware configuration, reviewed the PCB matrix for firmware setup, and improved the project's technical documentation.
+
+> **Project Integrity:** All schematics, PCB layouts, routing, CAD models, and mechanical design were created manually in KiCad and Autodesk Fusion. AI was used only for research, troubleshooting, review, firmware guidance, and documentation.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+---
