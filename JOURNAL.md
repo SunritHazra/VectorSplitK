@@ -61,7 +61,7 @@ Here's how each of them went by:
 6. **Testing Points:** 2 on each side of PCB. 4 of them in total. I selected **TestPoint:TestPoint_Pad_D2.0mm** as the footprint.
 7. **Integrated Circuit:** 1 XIAO on each side of PCB. 2 in total. I chose **modified-XIAO-nRF52840-SMD:modified-XIAO-nRF52840-SMD** as told in the guide.
 
-Here's the glimpse of the Footpsint Assigning Table:
+Here's the glimpse of the Footprint Assigning Table:
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/8a61f3d2-fec3-4f36-808e-dd65e889bda1" />
 
@@ -446,8 +446,10 @@ Here's the lapse of today's session: [VectorSplitK-LPS-13-D13](https://lapse.hac
 
 # Day 14 — 17.07.2026: Completing the Repository
 
+Today I captured all the renders from Fusion Teams, Autodesk Fusion, KiCad and wrote the `README.md`. Note that I have used AI to fix puntuation and spellings, not to write anything. I cloned my desktop files into the Github repo. I also added the lisence.
+
 Here's the lapse of today's session: [VectorSplitK-LPS-14-D14]()
 
-**Total time spent: 0h 00m**
+**Total time spent: 3h 00m**
 
 ---
