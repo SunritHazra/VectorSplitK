@@ -61,7 +61,7 @@ Here's how each of them went by:
 6. **Testing Points:** 2 on each side of PCB. 4 of them in total. I selected **TestPoint:TestPoint_Pad_D2.0mm** as the footprint.
 7. **Integrated Circuit:** 1 XIAO on each side of PCB. 2 in total. I chose **modified-XIAO-nRF52840-SMD:modified-XIAO-nRF52840-SMD** as told in the guide.
 
-Here's the glimpse of the Footpsint Assigning Table:
+Here's the glimpse of the Footprint Assigning Table:
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/8a61f3d2-fec3-4f36-808e-dd65e889bda1" />
 
@@ -438,16 +438,34 @@ Here's what I did to the PCB:
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/b3e1e8ef-e9e1-44f7-a322-619f9ca8c23f" />
 
-Here's the lapse of today's session: [VectorSplitK-LPS-13-D13](https://lapse.hackclub.com/timelapse/TeylD5ZsRaPr)
+Here're the lapses of today's session: [VectorSplitK-LPS-13-D13-1](https://lapse.hackclub.com/timelapse/p4w9sKsDkTIn) and [VectorSplitK-LPS-13-D13](https://lapse.hackclub.com/timelapse/TeylD5ZsRaPr)
 
-**Total time spent: 2h 00m**
+**Total time spent: 2h 20m**
 
 ---
 
 # Day 14 — 17.07.2026: Completing the Repository
 
+Today was all about compiling the fruits of the last two weeks of hard work and making the project public-ready. I focused entirely on documentation, visual assets, and setting up the GitHub repository.
+
+Here is exactly what went down today:
+
+* **Visual Assets:** Captured high-quality, clean renders of the completed 3D model from Fusion Teams, Autodesk Fusion, and the PCB layouts from KiCad. These visuals showcase the final assembly, including the custom 1.00u and 1.50u keycaps, the lower case battery compartments, and the physical alignment of the USB-C ports.
+
+* **Documentation (README.md):** Wrote the comprehensive project README.md to serve as the landing page for the repository. I used AI solely as a second set of eyes to polish up my grammar, spelling, and punctuation, ensuring the write-up accurately represents the technical details of the design process.
+
+* **Repository Setup & Licensing:** Cloned my local desktop development files into the remote GitHub repository, organized the folders for Gerbers, CAD files, and logs, and added an open-source license to protect and share the work.
+
+I also added a section in the [README](./README.md) where I wrote how I have used AI in this project, in the section **"AI as a Design Collaborator"**.
+
+With the repository fully structured and the design phase sitting at a proud 100%, the VectorSplitK is officially ready to transition from a digital design to a physical build.
+
+Here's a screenshot of the repository itself:
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/4fbfc491-a1af-4442-8d49-efa5ef5c6214" />
+
 Here's the lapse of today's session: [VectorSplitK-LPS-14-D14]()
 
-**Total time spent: 0h 00m**
+**Total time spent: 3h 20m**
 
 ---
