@@ -36,29 +36,35 @@ Right Half Matrix
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/8aa38ea9-39c9-45ee-b7cd-703116fdfb38" />
 
-### 2. PCB & PCBA
+### 2. Footprints
 
-Designed for rugged reliability and high-profile ergonomics using custom footprints.
+- **Switch Footprints:** High-profile `acheron_MXH:MX100H` (1.00u) and `acheron_MXH:MX150H` (1.50u) hotswap-ready switches (42 total, 21 per side).
+- **Diodes:** `Diode_SMD:D_SOD-123` (42 total, 1 per key).
+- **Mounting Holes:** `MountingHole:MountingHole_3.2mm_M3_DIN965_Pad` (8 total, 4 per side).
+- **Resistors:** `Resistor_SMD:R_0805_2012Metric` (4 total, 2 per side).
+- **Integrated Circuit:** `modified-XIAO-nRF52840-SMD:modified-XIAO-nRF52840-SMD` (2 total, 1 per side).
+- **Testing Points:** `TestPoint:TestPoint_Pad_D2.0mm` (4 total, 2 per side).
+- **Mousebites:** Clean PCB snapping using `PCM_marbastlib-various:mousebites_5p5mm_easysnap` (3 break-offs).
 
-kicad pcb
+### 3. Pinted Circuit Board Assembly
+
+Designed for rugged reliability and high-profile ergonomics using custom footprints. (pointless message)
+
+KiCad PCB Render
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/5277b5f5-4b47-4857-870f-0e312f831fd0" />
 
-kicad pcba
+KiCad PCBA Render
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/fe0aa805-3a3f-471e-8dc4-206e7a3fa0e6" />
 
-kicad pcb flip side
+KiCad PCB Back Side
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/e0bf87ad-cf28-4e59-847d-2a7acd6446dd" />
 
-kicad pcba flip side
+KiCad PCBA Back Side
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/4d254682-7eae-46d1-854a-c2e21442ab51" />
-
-- **Switch Footprints:** High-profile `acheron_MXH:MX100H` (1.00u) and `acheron_MXH:MX150H` (1.50u) hotswap-ready switches.
-- **Mousebites:** Clean PCB snapping using `PCM_marbastlib-various:mousebites_5p5mm_easysnap`.
-- **Design files:** [`/PCBA`](./PCBA)
 
 ### 3. Enclosure & CAD Assembly
 
