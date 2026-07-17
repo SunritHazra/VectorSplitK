@@ -4,6 +4,12 @@ An open-source, wireless, high-profile 42-key mechanical split keyboard. Built a
 
 > Full day-by-day design log, decisions, and dead ends: [JOURNAL.md](./JOURNAL.md)
 
+**Project stats:** 14 build-log days · ~40h 20m total design time · 100% designing progress, 0% building progress (as of the latest journal entry)
+
+**On the name:** Follows the author's personal naming convention for electronics projects (used previously for *hackpad* and *devboard*) — a descriptive word, a short form of the project's defining trait ("Split"), and a single trailing letter — giving **VectorSplitK**.
+
+---
+
 ## Renders
 
 ### Standard Top View
@@ -17,6 +23,8 @@ An open-source, wireless, high-profile 42-key mechanical split keyboard. Built a
 ### Rear Profile (USB-C & Alignment)
 
 <img width="21947" height="11113" alt="Render 3" src="https://github.com/user-attachments/assets/501ce6b4-b045-4aa8-9bdb-96b5441b6191" />
+
+---
 
 ## Hardware Architecture
 
@@ -89,6 +97,8 @@ section analysis in fusion showing the screw assembly
 - **Keycaps:** Custom-modeled 1.00u and 1.50u flat profile MX-stem keycaps tailored for 3D printing.
 - **CAD files:** [`/CAD`](./CAD)
 
+---
+
 ## Libraries & References
 
 **KiCad libraries used:**
@@ -103,6 +113,8 @@ section analysis in fusion showing the screw assembly
 - [OVERRIDE-X3D-Split-Keeb](https://github.com/DevX-Dragon/OVERRIDE-X3D-Split-Keeb)
 
 **Keycap reference model:** [Flat MX Keycaps — Printables](https://www.printables.com/model/467351-flat-mx-keycaps), used as a base to project and re-model custom 1.00u/1.50u profiles.
+
+---
 
 ## Design Notes
 
@@ -120,6 +132,19 @@ section analysis in fusion showing the screw assembly
 **Upper case (switch plate):** Modeled by projecting all switch bodies into a sketch, offsetting 1 mm around each switch and 1.5 mm along the walls, then extruding to the wall thickness (4.05 mm) with screw-hole pillars extended up from the PCB. Outer walls were thinned via a −0.8 mm facial offset on the curved edges for a lighter profile. Corner/cutout dimensions (14.70 × 14.70 mm switch openings, 0.705 mm corner radius) were carried over from the author's earlier hackpad build.
 
 **Design refinements:** The SoC position, PCB mounting holes, and upper-case mounting holes were all iterated to (1) clear the USB-C cable path symmetrically on both halves, (2) keep mounting holes equidistant from the three nearest switches for insert clearance, and (3) keep the upper-case screw geometry in sync with the final PCB layout.
+
+---
+
+## Fabrication & Testing
+
+- **Electrical Rule Check (ERC)** run after schematic completion to catch connection errors before layout.
+- **Design Rule Check (DRC)** run after routing, with remaining clearance/edge errors resolved before export.
+- **Silkscreen:** Front Fab and Back Fab converted to Back Silkscreen; User.Drawings converted to Front Silkscreen and User.Eco1 to Back Silkscreen; testing points manually labeled and text centered relative to switches. Author name, project name, and build month/year added to the front silkscreen for the final revision.
+- **Gerber export:** Full fabrication output exported as `VectorSplitK_Gerber.zip`.
+- **Fab test:** Gerbers test-uploaded to JLCPCB to validate manufacturability ahead of ordering.
+- **STEP export:** PCB exported at multiple levels of detail (full detail for reference, minimal/simplified for clean CAD import) to support Fusion 360 case modeling.
+
+---
 
 ## Bill of Materials (BOM)
 
@@ -150,6 +175,4 @@ Full sourcing sheet with vendors and pricing: [`/Bill of Materials`](<./Bill of 
 | Diodes, Resistors, SoC, Battery | Robu.in |
 | Screws & Knurled Inserts | OnlyScrews |
 
-## Firmware
-
-The board is designed around the **XIAO nRF52840**, so it's intended to run wireless **ZMK** firmware. Firmware configs and keymaps are not yet in this repository — coming soon.
+---
