@@ -153,10 +153,3 @@ Full sourcing sheet with vendors and pricing: [`/Bill of Materials`](<./Bill of 
 ## Firmware
 
 The board is designed around the **XIAO nRF52840**, so it's intended to run wireless **ZMK** firmware. Firmware configs and keymaps are not yet in this repository — coming soon.
-
-## Gallery
-
-More build photos and progress shots: [`/Gallery`](./Gallery)
-
-## License
-
