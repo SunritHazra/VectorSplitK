@@ -111,4 +111,4 @@ More build photos and progress shots: [`/Gallery`](./Gallery)
 
 ## License
 
-*(Add your license here, e.g. MIT / CERN-OHL-S — see LICENSE)*
+
