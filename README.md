@@ -179,6 +179,52 @@ Full sourcing sheet with vendors and pricing: [`/Bill of Materials`](<./Bill of 
 
 ## Firmware
 
+The board runs wireless **ZMK** firmware on the **XIAO nRF52840**, using a custom shield built on the upstream `seeeduino_xiao_ble` board support.
+
+### Matrix
+
+5 columns × 5 rows per half (21 keys/side, 42 total — a 4×5 grid plus 1 thumb key), with `diode-direction = "col2row"` matching the SOD-123 diode orientation on the PCB.
+
+| Signal | XIAO Pin |
+|---|---|
+| COL_0 | P0.03 |
+| COL_1 | P0.28 |
+| COL_2 | P0.29 |
+| COL_3 | P0.04 |
+| COL_4 | P0.05 |
+| ROW_0 | P1.15 |
+| ROW_1 | P1.14 |
+| ROW_2 | P1.13 |
+| ROW_3 | P1.12 |
+| ROW_4 | P1.11 |
+
+### Config
+
+Firmware lives in [`/zmk-config`](./zmk-config), structured as its own ZMK user-config repo:
+zmk-config/
+├── build.yaml
+├── config/
+│   ├── vectorsplitk.keymap
+│   ├── vectorsplitk.conf
+│   └── west.yml
+├── boards/shields/vectorsplitk/
+│   ├── vectorsplitk.dtsi
+│   ├── vectorsplitk_left.overlay
+│   ├── vectorsplitk_right.overlay
+│   ├── vectorsplitk.zmk.yml
+│   ├── Kconfig.shield
+│   └── Kconfig.defconfig
+└── .github/workflows/build.yml
+
+Pushing this folder as its own GitHub repo triggers a GitHub Actions build via `build.yaml`, producing `vectorsplitk_left-seeeduino_xiao_ble-zmk.uf2` and `vectorsplitk_right-seeeduino_xiao_ble-zmk.uf2` under the Actions tab, no local toolchain required.
+
+> **Known caveat:** the matrix transform assumes COL_0 is the innermost column (closest to the thumb key) on both halves. If keys type in mirrored left-right order on first flash, reverse the column order in `vectorsplitk.dtsi` — a firmware-only fix, no rewiring needed.
+
+### Flashing
+
+1. Double-tap Reset on the XIAO nRF52840 to mount it as a USB drive.
+2. Drag the matching `.uf2` (left or right) onto the drive.
+
 ---
 
 ## AI as a Design Collaborator
