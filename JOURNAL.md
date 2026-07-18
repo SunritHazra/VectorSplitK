@@ -469,3 +469,14 @@ Here's the lapse of today's session: [VectorSplitK-LPS-14-D14]()
 **Total time spent: 3h 20m**
 
 ---
+
+# Day 15 — 18.07.2026: Completing the Repository
+
+Today was the final thing that I had to do before submission: the code.
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/e51dc886-6f63-46a2-bb43-cc9554e524dc" />
+
+
+**Total time spent: 6h 00m**
+
+---
