@@ -9,7 +9,7 @@
 
 # Day 1 — 30.06.2026: Drawing the Schematic & Assigning Footprints
 
-For the split keyboard I have followed the Started Project Guide from Hack Club Stasis. For the first few minutes, before I started drawing the schmatic, I was asking AI what could I name
+For the split keyboard I have followed the Starter Project Guide from Hack Club Stasis. For the first few minutes, before I started drawing the schmatic, I was asking AI what could I name
 my project. And I chose "VectorSplitk" as the name of my project, which follows the same naming format as my previous starter electronics projects like hackpad and devboard.
 
 In this naming system, there are three parts:
