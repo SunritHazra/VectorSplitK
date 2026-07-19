@@ -73,7 +73,7 @@ I ran the ERC. Then it was time for the PCB. I didn't know how to design the edg
 
 I copied the edge cuts from different sources and found a way of awwanging the switches. My idea was to lay the swtiches in a grid (exactly as in the schematic) and then I move the second and second last rows **"X"** mm up and the middle row **"2X"** mm up. Here **"X"** can be 5 mm or 10 mm depending on the spacing.
 
-Here're the lapse of today's session: [VectorSplitK-LPS-1-D1-1](https://lapse.hackclub.com/timelapse/eYyMFjQSes5m) and [VectorSplitK-LPS-1-D1-2](https://lapse.hackclub.com/timelapse/YLruufpElHKS)
+Here're the lapses of today's session: [VectorSplitK-LPS-1-D1-1](https://lapse.hackclub.com/timelapse/eYyMFjQSes5m) and [VectorSplitK-LPS-1-D1-2](https://lapse.hackclub.com/timelapse/YLruufpElHKS)
 
 **Total time spent: 3h 50m**
 
