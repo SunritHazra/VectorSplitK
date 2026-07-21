@@ -58,6 +58,10 @@ Right Half Matrix
 
 Designed for rugged reliability and high-profile ergonomics using the custom footprints above.
 
+KiCad PCB Window
+
+<img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/c190da31-4c28-4f11-889e-a9ad3d6a6014" />
+
 KiCad PCB Render
 
 <img width="1366" height="733" alt="image" src="https://github.com/user-attachments/assets/5277b5f5-4b47-4857-870f-0e312f831fd0" />
