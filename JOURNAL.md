@@ -3,8 +3,8 @@ Title: "VectorSplitK"
 Author: "Sunrit Hazra"
 Description: "A wireless high-profile 42 key mechanical split keyboard based on Seeed Studio XIAO nRF52840."
 Created on: "30-06-2026"
-Design Progress (%): "100%"
-Build Progress (%): "0%"
+Design Progress: "100%"
+Build Progress: "0%"
 ---
 
 # Day 1 — 30.06.2026: Drawing the Schematic & Assigning Footprints
